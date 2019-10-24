@@ -406,10 +406,6 @@
               }
             ],
             "allowsOtherEventsToTrigger": true
-          },
-          {
-            "conditions": [],
-            "outcomes": []
           }
         ],
         "subMysteryGift": [
