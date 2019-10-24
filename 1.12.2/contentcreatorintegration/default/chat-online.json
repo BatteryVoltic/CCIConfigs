@@ -186,5 +186,6 @@
     }
   ],
   "init": [],
-  "type": "chat"
+  "type": "chat",
+  "from": "https://raw.githubusercontent.com/battery3996/CCIConfigs/master/1.12.2/contentcreatorintegration/tarillSF4/chat.json"
 }
