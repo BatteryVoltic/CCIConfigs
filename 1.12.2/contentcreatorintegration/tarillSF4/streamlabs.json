@@ -406,27 +406,6 @@
               }
             ],
             "allowsOtherEventsToTrigger": true
-          },
-          {
-            "conditions": [
-              {
-                "min": 100.0,
-                "max": 10000.0,
-                "type": "range"
-              }
-            ],
-            "outcomes": [
-              {
-                "command": "/give $playerName minecraft:dirt",
-                "type": "command",
-                "weight": 10
-              },
-              {
-                "command": "",
-                "type": "command",
-                "weight": 10
-              }
-            ]
           }
         ],
         "subMysteryGift": [
