@@ -1,0 +1,928 @@
+{
+  "configs": [
+    {
+      "types": {
+        "bits": [
+          {
+            "name": "Bits Notification",
+            "conditions": [],
+            "outcomes": [
+              {
+                "toastType": 2,
+                "title": "$user Cheered",
+                "subtitle": "$amount bits!",
+                "type": "toast"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 20
+          },
+          {
+            "name": "Grey Bits",
+            "conditions": [
+              {
+                "min": 1.0,
+                "max": 99.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "target": "$player",
+                "amount": "1",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-1",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "2",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-2",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "3",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-3",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "4",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-4",
+                "type": "health",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "Purple Bits",
+            "conditions": [
+              {
+                "min": 100.0,
+                "max": 999.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "target": "$player",
+                "amount": "5",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-5",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "6",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-6",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "7",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-7",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "8",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-8",
+                "type": "health",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "Green Bits",
+            "conditions": [
+              {
+                "min": 1000.0,
+                "max": 4999.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "target": "$player",
+                "amount": "9",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-9",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "10",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-10",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "11",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-11",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "12",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-12",
+                "type": "health",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "Blue Bits",
+            "conditions": [
+              {
+                "min": 5000.0,
+                "max": 9999.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "target": "$player",
+                "amount": "13",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-13",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "14",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-14",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "15",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-15",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "16",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-16",
+                "type": "health",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "Red Bits",
+            "conditions": [
+              {
+                "min": 10000.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "target": "$player",
+                "amount": "17",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-17",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "18",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-18",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "19",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-19",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "20",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-20",
+                "type": "health",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "500 Bits Chance Cube",
+            "conditions": [
+              {
+                "modId": "chancecubes",
+                "type": "modExists"
+              },
+              {
+                "min": 500.0,
+                "max": 999.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/give $playerName chancecubes:chance_cube 1 0",
+                "type": "command"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "1000 Bits Ico",
+            "conditions": [
+              {
+                "modId": "chancecubes",
+                "type": "modExists"
+              },
+              {
+                "min": 1000.0,
+                "max": 1499.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/give $playerName chancecubes:chance_icosahedron 1 0 ",
+                "type": "command"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "1500 Bits Giant Chance Cube",
+            "conditions": [
+              {
+                "modId": "chancecubes",
+                "type": "modExists"
+              },
+              {
+                "min": 1500.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/give $playerName chancecubes:compact_giant_chance_cube 1 0 ",
+                "type": "command"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "10000 Bits Giant in Base",
+            "conditions": [
+              {
+                "modId": "chancecubes",
+                "type": "modExists"
+              },
+              {
+                "min": 10000.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/give $playerName chancecubes:compact_giant_chance_cube 1 0 {display:{Name:\"Place this down in the middle of the Base\"}}",
+                "type": "command"
+              },
+              {
+                "sound": "chancecubes:giant_cube_spawn",
+                "type": "sound"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "ZOMBIES",
+            "conditions": [
+              {
+                "variableName": "sudoBAmount",
+                "variableInput": "$amount",
+                "type": "variableInsert"
+              },
+              {
+                "calc": "/",
+                "value1": "sudoBAmount",
+                "value2": "100",
+                "variableName": "rawBPayout",
+                "type": "math"
+              },
+              {
+                "calc": "floor",
+                "value1": "rawBPayout",
+                "value2": "0",
+                "variableName": "numBPayout",
+                "type": "math"
+              }
+            ],
+            "outcomes": [
+              {
+                "times": "$numBPayout",
+                "outcome": {
+                  "command": "/execute $playerName ~ ~ ~ /summon playerskins:playermob ~ ~ ~ {CustomName:$name, CustomNameVisible:1, Owner:$name}",
+                  "type": "command"
+                },
+                "type": "repeat"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "delay": 0
+          }
+        ],
+        "subMysteryGift": [
+          {
+            "name": "Sub Gift Notification",
+            "conditions": [],
+            "outcomes": [
+              {
+                "title": "Gifted Subs",
+                "subtitle": "$name gifted $amount subs",
+                "type": "toast"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 20
+          },
+          {
+            "name": "5 gifted subs Chance cube where you stand",
+            "conditions": [
+              {
+                "modId": "chancecubes",
+                "type": "modExists"
+              },
+              {
+                "min": 5.0,
+                "max": 9.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute $playerName ~ ~ ~ /setblock ~ ~ ~ chancecubes:chance_cube 0 replace",
+                "type": "command"
+              }
+            ]
+          },
+          {
+            "name": "10 gifted subs Ico where you stand",
+            "conditions": [
+              {
+                "modId": "chancecubes",
+                "type": "modExists"
+              },
+              {
+                "min": 10.0,
+                "max": 19.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute $playerName ~ ~ ~ /setblock ~ ~ ~ chancecubes:chance_icosahedron 0 replace",
+                "type": "command"
+              }
+            ]
+          },
+          {
+            "name": "100 Gifted Subs Clear Inventory",
+            "conditions": [
+              {
+                "amount": 100.0,
+                "type": "amount"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute $playerName ~ ~ ~ /clear",
+                "type": "command"
+              }
+            ]
+          }
+        ],
+        "subscription": [
+          {
+            "name": "Sub Notification ",
+            "conditions": [],
+            "outcomes": [
+              {
+                "toastType": 2,
+                "title": "$user subbed",
+                "subtitle": "$amount months!",
+                "type": "toast"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 20
+          },
+          {
+            "name": "Sub Reward",
+            "conditions": [
+              {
+                "modId": "chancecubes",
+                "type": "modExists"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/give $playerName chancecubes:chance_cube 1 0",
+                "type": "command"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "Mini me",
+            "conditions": [
+              {
+                "modId": "openblocks",
+                "type": "modExists"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon openblocks:mini_me ~ ~ ~ {owner:\"$name\",CustomName:\"$name\",CustomNameVisible:1}",
+                "type": "command"
+              },
+              {
+                "clientSide": true,
+                "sound": "openblocks:best.feature.ever.fart",
+                "target": "$playerName",
+                "type": "sound"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "delay": 60
+          }
+        ],
+        "follow": [
+          {
+            "name": "Follow Notification",
+            "conditions": [],
+            "outcomes": [
+              {
+                "toastType": 2,
+                "title": "Follower Alert",
+                "subtitle": "$user followed!",
+                "type": "toast"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 20
+          },
+          {
+            "name": "1+ Follow = 1 Random Food",
+            "conditions": [],
+            "outcomes": [
+              {
+                "command": "/give $playerName minecraft:melon",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:cookie",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:cooked_fish 1",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:cooked_fish 1 1",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:cooked_chicken",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:cooked_beef",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:cooked_porkchop",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:cooked_rabbit",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:bread",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:carrot",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:baked_potato",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:pumpkin_pie",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:cooked_mutton",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:beetroot_soup",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:mushroom_stew",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:apple",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:golden_apple",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:golden_apple 1 1",
+                "type": "command",
+                "weight": 1
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          }
+        ],
+        "host": [
+          {
+            "name": "Host Notification",
+            "conditions": [],
+            "outcomes": [
+              {
+                "toastType": 2,
+                "title": "$user is now hosting",
+                "subtitle": "$viewers viewers!",
+                "type": "toast"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 20
+          },
+          {
+            "name": "Summon Player on Host",
+            "conditions": [
+              {
+                "modId": "playerskins",
+                "type": "modExists"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon playerskins:playermob ~ ~ ~ {CustomName:$name, CustomNameVisible:1, Owner:$name}",
+                "type": "command"
+              }
+            ]
+          },
+          {
+            "name": "Attack of the hosts",
+            "conditions": [],
+            "outcomes": [
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon minecraft:zombie ~ ~3 ~ {CustomName:\"$user\",CustomNameVisible:1,Health:4,Attributes:[{Name:\"generic.attackDamage\",Base:1}],Silent:1,IsBaby:0,HandItems:[{id:\"minecraft:golden_hoe\",tag:{display:{Name:\"Ooooooo Shiny\",Lore:[\"================\",\"$name shiny tool of reaping\"]},ench:[{id:34,lvl:3}]},Count:1},{}],HandDropChances:[0.5F,0F],ArmorItems:[{id:\"minecraft:leather_boots\",tag:{display:{color:10027008}},Count:1},{id:\"minecraft:leather_leggings\",tag:{display:{color:10027008}},Count:1},{id:\"minecraft:leather_chestplate\",tag:{display:{color:10027008}},Count:1},{id:\"minecraft:skull\",Damage:3,Count:1,tag:{display:{Name:\"$user\",Lore:[\"==============\",\"The head of $user\",\"at one point $user hosted you\"]}}}],ArmorDropChances:[0F,0F,0F,2F],ActiveEffects:[{Id:24,Amplifier:0,Duration:2147483647}]}",
+                "type": "command"
+              }
+            ]
+          }
+        ],
+        "raid": [
+          {
+            "name": "Raid Notification",
+            "conditions": [],
+            "outcomes": [
+              {
+                "toastType": 2,
+                "title": "$user Raid",
+                "subtitle": "$amount viewers!",
+                "type": "toast"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "Raid of the viewers",
+            "conditions": [],
+            "outcomes": [
+              {
+                "condition": {
+                  "min": 20.0,
+                  "type": "range"
+                },
+                "outcome": {
+                  "times": "20",
+                  "outcome": {
+                    "command": "/execute $playerName ~ ~ ~ /summon minecraft:zombie ~ ~1 ~ {CustomName:\"$name\",CustomNameVisible:1,Health:6,Attributes:[{Name:\"generic.attackDamage\",Base:1}],IsBaby:0}",
+                    "type": "command"
+                  },
+                  "type": "repeat"
+                },
+                "conditionNotMetOutcome": {
+                  "times": "$amount",
+                  "outcome": {
+                    "command": "/execute $playerName ~ ~ ~ /summon minecraft:zombie ~ ~1 ~ {CustomName:\"$name\",CustomNameVisible:1,Health:6,Attributes:[{Name:\"generic.attackDamage\",Base:1}],IsBaby:0}",
+                    "type": "command"
+                  },
+                  "type": "repeat"
+                },
+                "type": "conditional"
+              }
+            ]
+          }
+        ]
+      },
+      "queue": [
+        "host+subscription+bits",
+        "follow"
+      ],
+      "for": "twitch_account"
+    },
+    {
+      "types": {
+        "donation": [
+          {
+            "name": "Donation Notification",
+            "conditions": [],
+            "outcomes": [
+              {
+                "toastType": 2,
+                "title": "$user donated!",
+                "subtitle": "$formatted_amount",
+                "type": "toast"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 8
+          },
+          {
+            "name": "Donation Raid",
+            "conditions": [
+              {
+                "variableName": "sudoDAmount",
+                "variableInput": "$amount",
+                "type": "variableInsert"
+              },
+              {
+                "calc": "/",
+                "value1": "sudoDAmount",
+                "value2": "1",
+                "variableName": "rawDPayout",
+                "type": "math"
+              },
+              {
+                "calc": "floor",
+                "value1": "rawDPayout",
+                "value2": "0",
+                "variableName": "numDPayout",
+                "type": "math"
+              }
+            ],
+            "outcomes": [
+              {
+                "times": "$numDPayout",
+                "outcome": {
+                  "command": "/execute $playerName ~ ~ ~ /summon playerskins:playermob ~ ~ ~ {CustomName:$name, CustomNameVisible:1, Owner:$name}",
+                  "type": "command"
+                },
+                "type": "repeat"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "delay": 0
+          },
+          {
+            "name": "$5 Chance cubes",
+            "conditions": [
+              {
+                "modId": "chancecubes",
+                "type": "modExists"
+              },
+              {
+                "min": 5.0,
+                "max": 9.99,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/give $playerName chancecubes:chance_cube 1 0 ",
+                "type": "command"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 8
+          },
+          {
+            "name": "$10 Ico",
+            "conditions": [
+              {
+                "modId": "chancecubes",
+                "type": "modExists"
+              },
+              {
+                "min": 10.0,
+                "max": 14.99,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/give $playerName chancecubes:chance_icosahedron 1 0 ",
+                "type": "command"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 8
+          },
+          {
+            "name": "$15 Giant",
+            "conditions": [
+              {
+                "modId": "chancecubes",
+                "type": "modExists"
+              },
+              {
+                "min": 15.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/give $playerName chancecubes:compact_giant_chance_cube 1 0 ",
+                "type": "command"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 8
+          },
+          {
+            "name": "$100 Giant Place",
+            "conditions": [
+              {
+                "modId": "chancecubes",
+                "type": "modExists"
+              },
+              {
+                "min": 100.0,
+                "max": 199.99,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/give $playerName chancecubes:compact_giant_chance_cube 1 0 {display:{Name:\"Place this down in the middle of the Base\"}}",
+                "executeAsSelf": true,
+                "type": "command"
+              },
+              {
+                "sound": "chancecubes:giant_cube_spawn",
+                "type": "sound"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 8
+          }
+        ]
+      }
+    }
+  ],
+  "init": [],
+  "type": "streamlabs"
+}

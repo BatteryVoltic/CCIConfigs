@@ -1,0 +1,13 @@
+{
+  "conditions": {},
+  "outcomes": {
+    "undefined": {
+      "toastType": 0,
+      "title": "CCI Config Loaded!",
+      "subtitle": "Thanks for using CCI! ~Battery3996's Config",
+      "titleColor": "#F09300",
+      "type": "toast"
+    }
+  },
+  "events": {}
+}

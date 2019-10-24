@@ -1,0 +1,1384 @@
+{
+  "configs": [
+    {
+      "types": {
+        "bits": [
+          {
+            "name": "Bits Notification",
+            "conditions": [],
+            "outcomes": [
+              {
+                "toastType": 2,
+                "title": "$user Cheered",
+                "subtitle": "$amount bits!",
+                "type": "toast"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 20
+          },
+          {
+            "name": "Grey Bits",
+            "conditions": [
+              {
+                "min": 1.0,
+                "max": 99.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "target": "$player",
+                "amount": "1",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-1",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "2",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-2",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "3",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-3",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "4",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-4",
+                "type": "health",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "Purple Bits",
+            "conditions": [
+              {
+                "min": 100.0,
+                "max": 999.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "target": "$player",
+                "amount": "5",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-5",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "6",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-6",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "7",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-7",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "8",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-8",
+                "type": "health",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "Green Bits",
+            "conditions": [
+              {
+                "min": 1000.0,
+                "max": 4999.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "target": "$player",
+                "amount": "9",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-9",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "10",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-10",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "11",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-11",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "12",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-12",
+                "type": "health",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "Blue Bits",
+            "conditions": [
+              {
+                "min": 5000.0,
+                "max": 9999.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "target": "$player",
+                "amount": "13",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-13",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "14",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-14",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "15",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-15",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "16",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-16",
+                "type": "health",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "Red Bits",
+            "conditions": [
+              {
+                "min": 10000.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "target": "$player",
+                "amount": "17",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-17",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "18",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-18",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "19",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-19",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "20",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-20",
+                "type": "health",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "500 Bits Chance Cube",
+            "conditions": [
+              {
+                "modId": "chancecubes",
+                "type": "modExists"
+              },
+              {
+                "min": 500.0,
+                "max": 999.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/give $playerName chancecubes:chance_cube 1 0",
+                "type": "command"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "1000 Bits Ico",
+            "conditions": [
+              {
+                "modId": "chancecubes",
+                "type": "modExists"
+              },
+              {
+                "min": 1000.0,
+                "max": 1499.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/give $playerName chancecubes:chance_icosahedron 1 0 ",
+                "type": "command"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "1500 Bits Giant Chance Cube",
+            "conditions": [
+              {
+                "modId": "chancecubes",
+                "type": "modExists"
+              },
+              {
+                "min": 1500.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/give $playerName chancecubes:compact_giant_chance_cube 1 0 ",
+                "type": "command"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "10000 Bits Giant in Base",
+            "conditions": [
+              {
+                "modId": "chancecubes",
+                "type": "modExists"
+              },
+              {
+                "min": 10000.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/give $playerName chancecubes:compact_giant_chance_cube 1 0 {display:{Name:\"Place this down in the middle of the Base\"}}",
+                "type": "command"
+              },
+              {
+                "sound": "chancecubes:giant_cube_spawn",
+                "type": "sound"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "conditions": [
+              {
+                "min": 100.0,
+                "max": 10000.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/give $playerName minecraft:dirt",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "",
+                "type": "command",
+                "weight": 10
+              }
+            ]
+          }
+        ],
+        "subMysteryGift": [
+          {
+            "name": "Sub Gift Notification",
+            "conditions": [],
+            "outcomes": [
+              {
+                "title": "Gifted Subs",
+                "subtitle": "$name gifted $amount subs",
+                "type": "toast"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 20
+          },
+          {
+            "name": "5 gifted subs Chance cube where you stand",
+            "conditions": [
+              {
+                "modId": "chancecubes",
+                "type": "modExists"
+              },
+              {
+                "min": 5.0,
+                "max": 9.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute $playerName ~ ~ ~ /setblock ~ ~ ~ chancecubes:chance_cube 0 replace",
+                "type": "command"
+              }
+            ]
+          },
+          {
+            "name": "10 gifted subs Ico where you stand",
+            "conditions": [
+              {
+                "modId": "chancecubes",
+                "type": "modExists"
+              },
+              {
+                "min": 10.0,
+                "max": 19.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute $playerName ~ ~ ~ /setblock ~ ~ ~ chancecubes:chance_icosahedron 0 replace",
+                "type": "command"
+              }
+            ]
+          },
+          {
+            "name": "100 Gifted Subs Clear Inventory",
+            "conditions": [
+              {
+                "amount": 100.0,
+                "type": "amount"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute $playerName ~ ~ ~ /clear",
+                "type": "command"
+              }
+            ]
+          }
+        ],
+        "subscription": [
+          {
+            "name": "Sub Notification ",
+            "conditions": [],
+            "outcomes": [
+              {
+                "toastType": 2,
+                "title": "$user subbed",
+                "subtitle": "$amount months!",
+                "type": "toast"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 20
+          },
+          {
+            "name": "Sub Reward",
+            "conditions": [
+              {
+                "modId": "chancecubes",
+                "type": "modExists"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/give $playerName chancecubes:chance_cube 1 0",
+                "type": "command"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          }
+        ],
+        "follow": [
+          {
+            "name": "Follow Notification",
+            "conditions": [],
+            "outcomes": [
+              {
+                "toastType": 2,
+                "title": "Follower Alert",
+                "subtitle": "Welcome to the House of Asylum!",
+                "type": "toast"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 20
+          },
+          {
+            "name": "1+ Follow = 1 Random Food",
+            "conditions": [],
+            "outcomes": [
+              {
+                "command": "/give $playerName minecraft:melon",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:cookie",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:cooked_fish 1",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:cooked_fish 1 1",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:cooked_chicken",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:cooked_beef",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:cooked_porkchop",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:cooked_rabbit",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:bread",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:carrot",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:baked_potato",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:pumpkin_pie",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:cooked_mutton",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:beetroot_soup",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:mushroom_stew",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:apple",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName minecraft:golden_apple",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName xlfoodmod:taco",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName xlfoodmod:vanilla_cupcake",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName xlfoodmod:vegetable_soup",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName xlfoodmod:caramel_apple",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName xlfoodmod:cheesy_bread",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName xlfoodmod:donut",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName xlfoodmod:chocolate_cupcake",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName xlfoodmod:onion_rings",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName xlfoodmod:enchilada",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName xlfoodmod:chocolate",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName xlfoodmod:hamburger",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName xlfoodmod:healthy_energy_drink",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName xlfoodmod:hot_dog",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName xlfoodmod:ham",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give $playerName xlfoodmod:super_energy_drink",
+                "type": "command",
+                "weight": 1
+              },
+              {
+                "command": "/give $playerName minecraft:golden_apple 1 1",
+                "type": "command",
+                "weight": 1
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          }
+        ],
+        "host": [
+          {
+            "name": "Host Notification",
+            "conditions": [],
+            "outcomes": [
+              {
+                "toastType": 2,
+                "title": "Thanks for the Host",
+                "subtitle": "+$viewers viewers!",
+                "type": "toast"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 20
+          },
+          {
+            "name": "Host animals",
+            "conditions": [],
+            "outcomes": [
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon minecraft:cat ~ ~1 ~ {CustomNameVisible:1}",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon minecraft:cat ~ ~1 ~ {CustomNameVisible:1}",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon minecraft:chicken ~ ~1 ~ {CustomNameVisible:1}",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon minecraft:cow ~ ~1 ~ {CustomNameVisible:1}",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon minecraft:donkey ~ ~1 ~ {CustomNameVisible:1}",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon minecraft:horse ~ ~1 ~ {CustomNameVisible:1}",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon minecraft:iron_golem ~ ~1 ~ {CustomNameVisible:1}",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon minecraft:mooshroom ~ ~1 ~ {CustomNameVisible:1}",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon minecraft:ocelot ~ ~1 ~ {CustomNameVisible:1}",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon minecraft:pig ~ ~1 ~ {CustomNameVisible:1}",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon minecraft:rabbit ~ ~1 ~ {CustomNameVisible:1}",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon minecraft:sheep ~ ~1 ~ {CustomNameVisible:1}",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon minecraft:skeleton_horse ~ ~1 ~ {CustomNameVisible:1}",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon minecraft:snow_golem ~ ~1 ~ {CustomNameVisible:1}",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon minecraft:villager ~ ~1 ~ {CustomNameVisible:1}",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon minecraft:zombie_horse ~ ~1 ~ {CustomNameVisible:1}",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon twilightforest:wild_boar ~ ~1 ~ {CustomNameVisible:1}",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon twilightforest:bighorn_sheep ~ ~1 ~ {CustomNameVisible:1}",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon twilightforest:deer ~ ~1 ~ {CustomNameVisible:1}",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon twilightforest:penguin ~ ~1 ~ {CustomNameVisible:1}",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon twilightforest:tiny_bird ~ ~1 ~ {CustomNameVisible:1}",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon twilightforest:squirrel ~ ~1 ~ {CustomNameVisible:1}",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon twilightforest:raven ~ ~1 ~ {CustomNameVisible:1}",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon twilightforest:bunny ~ ~1 ~ {CustomNameVisible:1}",
+                "type": "command",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "NameTag on Host",
+            "conditions": [],
+            "outcomes": [
+              {
+                "command": "/give $playerName minecraft:name_tag 1 0 {display:{Name:\"$user\"}}",
+                "type": "command"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "FireFLy",
+            "conditions": [],
+            "outcomes": [
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon twilightforest:firefly ~ ~1 ~",
+                "type": "command"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "Summon Player on Host",
+            "conditions": [
+              {
+                "modId": "headcrumbs",
+                "type": "modExists"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon headcrumbs:human ~ ~1 ~ {CustomNameVisible:1, Health:1,Attributes:[{Name:\"generic.maxHealth\",Base:1}], Attributes:[{Name:generic.attackDamage,Base:0.1}]}",
+                "type": "command"
+              }
+            ],
+            "delay": 100
+          },
+          {
+            "name": "Attack of the hosts",
+            "conditions": [],
+            "outcomes": [
+              {
+                "command": "/execute $playerName ~ ~ ~ /summon minecraft:zombie ~ ~3 ~ {CustomName:\"$user\",CustomNameVisible:0,Health:4,Attributes:[{Name:\"generic.attackDamage\",Base:1}],Silent:1,IsBaby:0,HandItems:[{id:\"minecraft:golden_hoe\",tag:{display:{Name:\"Ooooooo Shiny\",Lore:[\"================\",\"$name shiny tool of reaping\"]},ench:[{id:34,lvl:3}]},Count:1},{}],HandDropChances:[0.5F,0F],ArmorItems:[{id:\"minecraft:leather_boots\",tag:{display:{color:10027008}},Count:1},{id:\"minecraft:leather_leggings\",tag:{display:{color:10027008}},Count:1},{id:\"minecraft:leather_chestplate\",tag:{display:{color:10027008}},Count:1},{id:\"minecraft:skull\",Damage:3,Count:1,tag:{display:{Name:\"$user\",Lore:[\"==============\",\"The head of $user\",\"at one point $user hosted you\"]}}}],ArmorDropChances:[0F,0F,0F,2F],ActiveEffects:[{Id:24,Amplifier:0,Duration:2147483647}]}",
+                "type": "command"
+              }
+            ]
+          }
+        ],
+        "raid": [
+          {
+            "name": "Raid Notification",
+            "conditions": [],
+            "outcomes": [
+              {
+                "toastType": 2,
+                "title": "$user Raid",
+                "subtitle": "$amount viewers!",
+                "type": "toast"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "Raid of the viewers",
+            "conditions": [],
+            "outcomes": [
+              {
+                "condition": {
+                  "min": 20.0,
+                  "type": "range"
+                },
+                "outcome": {
+                  "times": "20",
+                  "outcome": {
+                    "command": "/execute $playerName ~ ~ ~ /summon headcrumbs:human ~ ~1 ~ {Username:\"$name\", CustomNameVisible:1,Health:6,Attributes:[{Name:\"generic.attackDamage\",Base:1}],IsBaby:0}",
+                    "type": "command"
+                  },
+                  "type": "repeat"
+                },
+                "conditionNotMetOutcome": {
+                  "times": "$amount",
+                  "outcome": {
+                    "command": "/execute $playerName ~ ~ ~ /summon headcrumbs:human ~ ~1 ~ {Username:\"$name\", CustomNameVisible:1, Health:6,Attributes:[{Name:\"generic.attackDamage\",Base:1}],IsBaby:0}",
+                    "type": "command"
+                  },
+                  "type": "repeat"
+                },
+                "type": "conditional"
+              }
+            ],
+            "delay": 100
+          }
+        ]
+      },
+      "queue": [
+        "host+subscription+bits",
+        "follow"
+      ],
+      "for": "twitch_account"
+    },
+    {
+      "types": {
+        "donation": [
+          {
+            "name": "Donation Notification",
+            "conditions": [],
+            "outcomes": [
+              {
+                "toastType": 2,
+                "title": "$user donated!",
+                "subtitle": "",
+                "type": "toast"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 8
+          },
+          {
+            "name": "0.01-0.99",
+            "conditions": [
+              {
+                "min": 0.01,
+                "max": 0.99,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "target": "$player",
+                "amount": "1",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-1",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "2",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-2",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "3",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-3",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "4",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-4",
+                "type": "health",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "1-9.99",
+            "conditions": [
+              {
+                "min": 1.0,
+                "max": 9.99,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "target": "$player",
+                "amount": "5",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-5",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "6",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-6",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "7",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-7",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "8",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-8",
+                "type": "health",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "10-49.99",
+            "conditions": [
+              {
+                "min": 10.0,
+                "max": 49.99,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "target": "$player",
+                "amount": "9",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-9",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "10",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-10",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "11",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-11",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "12",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-12",
+                "type": "health",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "50-99.99",
+            "conditions": [
+              {
+                "min": 50.0,
+                "max": 99.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "target": "$player",
+                "amount": "13",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-13",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "14",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-14",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "15",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-15",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "16",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-16",
+                "type": "health",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "100",
+            "conditions": [
+              {
+                "min": 100.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "target": "$player",
+                "amount": "17",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-17",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "18",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-18",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "19",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-19",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "20",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$player",
+                "amount": "-20",
+                "type": "health",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "$5 Chance cubes",
+            "conditions": [
+              {
+                "modId": "chancecubes",
+                "type": "modExists"
+              },
+              {
+                "min": 5.0,
+                "max": 9.99,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/give $playerName chancecubes:chance_cube 1 0 ",
+                "type": "command"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 8
+          },
+          {
+            "name": "$10 Ico",
+            "conditions": [
+              {
+                "modId": "chancecubes",
+                "type": "modExists"
+              },
+              {
+                "min": 10.0,
+                "max": 14.99,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/give $playerName chancecubes:chance_icosahedron 1 0 ",
+                "type": "command"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 8
+          },
+          {
+            "name": "$15 Giant",
+            "conditions": [
+              {
+                "modId": "chancecubes",
+                "type": "modExists"
+              },
+              {
+                "min": 15.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/give $playerName chancecubes:compact_giant_chance_cube 1 0 ",
+                "type": "command"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 8
+          },
+          {
+            "name": "$100 Giant Place",
+            "conditions": [
+              {
+                "modId": "chancecubes",
+                "type": "modExists"
+              },
+              {
+                "min": 100.0,
+                "max": 199.99,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/give $playerName chancecubes:compact_giant_chance_cube 1 0 {display:{Name:\"Place this down in the middle of the Base\"}}",
+                "executeAsSelf": true,
+                "type": "command"
+              },
+              {
+                "sound": "chancecubes:giant_cube_spawn",
+                "type": "sound"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 8
+          }
+        ]
+      }
+    }
+  ],
+  "init": [],
+  "type": "streamlabs"
+}
