@@ -127,6 +127,7 @@
               {
                 "command": "/cci reload",
                 "executeAsSelf": true,
+                "isClientSideCommand": true,
                 "type": "command"
               },
               {
