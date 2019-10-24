@@ -131,7 +131,7 @@
                 "type": "command"
               },
               {
-                "command": "/tellraw $playerName [\"\",{\"text\":\"================================\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"\\n\"},{\"text\":\"CCI Configs Reloaded! Enjoy!\",\"color\":\"yellow\"},{\"text\":\"\\n\"},{\"text\":\"================================\",\"bold\":true,\"color\":\"gold\"}]",
+                "command": "/tellraw $playerName [\"\",{\"text\":\"================================\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"\\n\"},{\"text\":\"CCI Configs Reloaded! Enjoy!\",\"color\":\"red\"},{\"text\":\"\\n\"},{\"text\":\"================================\",\"bold\":true,\"color\":\"gold\"}]",
                 "type": "command"
               }
             ]
