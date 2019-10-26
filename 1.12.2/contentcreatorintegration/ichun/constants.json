@@ -1,0 +1,17 @@
+{
+  "configs": [
+    {
+      "types": {
+        "unspecified": [
+          {
+            "conditions": [],
+            "outcomes": []
+          }
+        ]
+      },
+      "for": "default"
+    }
+  ],
+  "init": [],
+  "type": "constants"
+}

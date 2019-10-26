@@ -126,6 +126,7 @@
             "outcomes": [
               {
                 "command": "/cci reload",
+                "isClientSideCommand": true,
                 "type": "command"
               },
               {

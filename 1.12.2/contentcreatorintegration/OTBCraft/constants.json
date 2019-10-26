@@ -1,0 +1,15 @@
+{
+  "conditions": {},
+  "outcomes": {},
+  "events": {
+    "undefined": {
+      "conditions": [],
+      "outcomes": [
+        {
+          "message": "Thank you for loading this CCI Config! ~Battery3996",
+          "type": "chat"
+        }
+      ]
+    }
+  }
+}

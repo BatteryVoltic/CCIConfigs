@@ -1,3 +1,5 @@
 
 1.12.2/contentcreatorintegration/contentcreatorintegration.cfg
 *.log
+*.gz
+*stats.json

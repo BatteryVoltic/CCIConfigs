@@ -1,0 +1,182 @@
+{
+  "configs": [
+    {
+      "types": {
+        "message": [
+          {
+            "name": "inverse off",
+            "disabled": true,
+            "conditions": [
+              {
+                "username": "ohaiiChun",
+                "type": "user"
+              }
+            ],
+            "outcomes": [
+              {
+                "message": "inverse off triggered",
+                "type": "chat"
+              },
+              {
+                "target": "iChun",
+                "index": "2",
+                "count": "2",
+                "type": "drop"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "inverse on",
+            "disabled": true,
+            "conditions": [
+              {
+                "username": "ohaiiChun",
+                "type": "user",
+                "inverseMatch": true
+              }
+            ],
+            "outcomes": [
+              {
+                "message": "inverse on triggered",
+                "type": "chat"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "Toast",
+            "conditions": [],
+            "outcomes": [
+              {
+                "title": "$display-name says:",
+                "subtitle": "$message",
+                "titleColor": "$color",
+                "type": "toast",
+                "weight": 0
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "Spawner",
+            "conditions": [
+              {
+                "value1": "0",
+                "value2": "65432",
+                "variableName": "randnum",
+                "roundNumber": true,
+                "type": "randomNumber"
+              },
+              {
+                "values": [
+                  "bat",
+                  "chicken",
+                  "cow",
+                  "donkey",
+                  "horse",
+                  "mooshroom",
+                  "mule",
+                  "ocelot",
+                  "parrot",
+                  "pig",
+                  "rabbit",
+                  "sheep",
+                  "horse",
+                  "villager",
+                  "skeleton_horse",
+                  "zombie_horse",
+                  "polar_bear",
+                  "llama",
+                  "tnt",
+                  "wolf"
+                ],
+                "variableName": "enttype",
+                "type": "randomString"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/summon $enttype 653.5 2 -1036.5 {PersistenceRequired:1,CustomName:\"$user$randnum\",CustomNameVisible:true}",
+                "executeAsSelf": true,
+                "type": "command"
+              },
+              {
+                "condition": {
+                  "conditions": [
+                    {
+                      "noteName": "lastpig",
+                      "variableName": "lastpig",
+                      "type": "note"
+                    },
+                    {
+                      "target": "@e[name=$lastpig]",
+                      "type": "targetExists"
+                    },
+                    {
+                      "variableName": "enttype",
+                      "variableResult": "tnt",
+                      "type": "variable",
+                      "inverseMatch": true
+                    },
+                    {
+                      "variableName": "enttype",
+                      "variableResult": "lightning_bolt",
+                      "type": "variable",
+                      "inverseMatch": true
+                    }
+                  ],
+                  "type": "multiple"
+                },
+                "outcome": {
+                  "riderTarget": "@e[name=$user$randnum]",
+                  "riddenTarget": "@e[name=$lastpig]",
+                  "force": true,
+                  "type": "mount"
+                },
+                "type": "conditional"
+              },
+              {
+                "noteName": "lastpig",
+                "noteContent": "$user$randnum",
+                "type": "note"
+              }
+            ]
+          },
+          {
+            "conditions": [],
+            "outcomes": []
+          }
+        ],
+        "action": [
+          {
+            "name": "toast",
+            "conditions": [],
+            "outcomes": [
+              {
+                "toastType": 2,
+                "title": "$user",
+                "subtitle": "$message",
+                "type": "toast"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "test",
+            "conditions": [],
+            "outcomes": [
+              {
+                "name": "testoutcome",
+                "type": "constant"
+              }
+            ]
+          }
+        ]
+      },
+      "queue": []
+    }
+  ],
+  "init": [],
+  "type": "chat"
+}

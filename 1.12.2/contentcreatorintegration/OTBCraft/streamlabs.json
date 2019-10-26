@@ -1,0 +1,153 @@
+{
+  "configs": [
+    {
+      "types": {
+        "bits": [
+          {
+            "conditions": [],
+            "outcomes": [
+              {
+                "toastType": 2,
+                "title": "$name cheered:",
+                "subtitle": "$amount",
+                "type": "toast"
+              }
+            ]
+          }
+        ],
+        "subMysteryGift": [
+          {
+            "conditions": [],
+            "outcomes": [
+              {
+                "message": "Hey $streamer, $name just gave out $amount subs!",
+                "type": "chat"
+              }
+            ],
+            "playTime": 20
+          }
+        ],
+        "subscription": [
+          {
+            "conditions": [],
+            "outcomes": [
+              {
+                "message": "Hey $streamer, $user just subscribed for $amount months!",
+                "type": "chat"
+              }
+            ],
+            "playTime": 20
+          }
+        ],
+        "follow": [
+          {
+            "conditions": [
+              {
+                "values": [
+                  "apple",
+                  "mushroom_stew",
+                  "bread",
+                  "porkchop",
+                  "cooked_porkchop",
+                  "golden_apple",
+                  "enchanted_golden_apple",
+                  "cod",
+                  "salmon",
+                  "tropical_fish",
+                  "pufferfish",
+                  "cooked_cod",
+                  "cooked_salmon",
+                  "cake",
+                  "cookie",
+                  "melon_slice",
+                  "dried_kelp",
+                  "beef",
+                  "cooked_beef",
+                  "chicken",
+                  "cooked_chicken",
+                  "carrot",
+                  "potato",
+                  "baked_potato",
+                  "golden_carrot",
+                  "pumpkin_pie",
+                  "rabbit",
+                  "cooked_rabbit",
+                  "rabbit_stew",
+                  "mutton",
+                  "cooked_mutton",
+                  "chorus_fruit",
+                  "beetroot",
+                  "beetroot_soup",
+                  "sweet_berries"
+                ],
+                "variableName": "foods",
+                "type": "randomString"
+              }
+            ],
+            "outcomes": [
+              {
+                "toastType": 2,
+                "title": "New Follower!",
+                "subtitle": "$name",
+                "titleColor": "#D2B517",
+                "type": "toast"
+              },
+              {
+                "command": "/give $playerName minecraft:$foods 1",
+                "type": "command"
+              }
+            ],
+            "playTime": 20
+          }
+        ],
+        "host": [
+          {
+            "conditions": [],
+            "outcomes": [
+              {
+                "toastType": 2,
+                "title": "$name is Hosting!",
+                "subtitle": "$amount viewers joined!",
+                "type": "toast"
+              }
+            ],
+            "playTime": 20
+          }
+        ],
+        "raid": [
+          {
+            "conditions": [],
+            "outcomes": [
+              {
+                "message": "Hey $streamer, $user just raided you with $amount raiders!",
+                "type": "chat"
+              }
+            ]
+          }
+        ]
+      },
+      "queue": [
+        "host+subscription+bits",
+        "follow"
+      ],
+      "for": "twitch_account"
+    },
+    {
+      "types": {
+        "donation": [
+          {
+            "conditions": [],
+            "outcomes": [
+              {
+                "message": "Hey $streamer, $user just tipped $formatted_amount!",
+                "type": "chat"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "init": [],
+  "type": "streamlabs"
+}
