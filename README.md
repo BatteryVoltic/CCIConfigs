@@ -13,6 +13,7 @@ iChun: [CurseForge](https://www.curseforge.com/members/ohaiichun/projects) | [Tw
 -----
 ### Streamers Associated With
 
-Battery3996 (self): [Twitch](https://www.twitch.tv/Battery3996)  
+Battery3996 (self/script writer): [Twitch](https://www.twitch.tv/Battery3996)  
+Sublimiter (script writer):[Twitch](https://www.twitch.tv/sublimiter)  
 TarilltheMad: [Twitch](https://www.twitch.tv/TarilltheMad)  
 QuirkyGeek17: [Twitch](https://www.twitch.tv/quirkygeek17)  
