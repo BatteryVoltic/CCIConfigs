@@ -474,7 +474,7 @@
             "conditions": [],
             "outcomes": [
               {
-                "message": "Warning! $name has an incoming raid, ",
+                "message": "Warning! $name has an incoming raid.",
                 "inActionBar": true,
                 "type": "chat"
               }
