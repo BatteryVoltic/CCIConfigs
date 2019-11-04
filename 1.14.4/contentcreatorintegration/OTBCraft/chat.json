@@ -4,18 +4,33 @@
       "types": {
         "message": [
           {
-            "conditions": [],
+            "name": "Chat",
+            "conditions": [
+              {
+                "username": "InsertBotNameHere",
+                "type": "user",
+                "inverseMatch": true
+              }
+            ],
             "outcomes": [
               {
                 "command": "/tellraw $playerName [\"\",{\"text\":\"<\"},{\"text\":\"[\",\"color\":\"gold\"},{\"text\":\"Twitch\",\"color\":\"dark_purple\"},{\"text\":\"]\",\"color\":\"gold\"},{\"text\":\" $display-name> $message\"}]",
                 "type": "command"
               }
-            ]
+            ],
+            "triggersFromAnyConditionMet": true
           }
         ],
         "action": [
           {
-            "conditions": [],
+            "name": "Chat Action",
+            "conditions": [
+              {
+                "username": "insertBotNameHere",
+                "type": "user",
+                "inverseMatch": true
+              }
+            ],
             "outcomes": [
               {
                 "command": "/tellraw $playerName [\"\",{\"text\":\"* \"},{\"text\":\"[\",\"color\":\"gold\"},{\"text\":\"Twitch\",\"color\":\"dark_purple\"},{\"text\":\"]\",\"color\":\"gold\"},{\"text\":\" $display-name $message\",\"color\":\"gray\"}]",

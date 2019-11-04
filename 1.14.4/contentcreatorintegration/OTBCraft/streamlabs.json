@@ -4,6 +4,7 @@
       "types": {
         "bits": [
           {
+            "name": "Bits Notify",
             "conditions": [],
             "outcomes": [
               {
@@ -12,16 +13,330 @@
                 "subtitle": "$amount",
                 "type": "toast"
               }
-            ]
+            ],
+            "triggersFromAnyConditionMet": true,
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "Grey Bits",
+            "conditions": [
+              {
+                "min": 1.0,
+                "max": 99.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "target": "$playerName",
+                "amount": "1",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "2",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "3",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "4",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "-1",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "-2",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "-3",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "-4",
+                "type": "health",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 60
+          },
+          {
+            "name": "Purple Bits",
+            "conditions": [
+              {
+                "min": 100.0,
+                "max": 999.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "target": "$playerName",
+                "amount": "5",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "6",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "7",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "8",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "-5",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "-6",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "-7",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "-8",
+                "type": "health",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 60
+          },
+          {
+            "name": "Green Bits",
+            "conditions": [
+              {
+                "min": 1000.0,
+                "max": 4999.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "target": "$playerName",
+                "amount": "9",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "10",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "11",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "12",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "-9",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "-10",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "-11",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "-12",
+                "type": "health",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 60
+          },
+          {
+            "name": "Blue Bits",
+            "conditions": [
+              {
+                "min": 5000.0,
+                "max": 9999.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "target": "$playerName",
+                "amount": "13",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "14",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "15",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "16",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "-13",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "-14",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "-15",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "-16",
+                "type": "health",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 60
+          },
+          {
+            "name": "Red Bits",
+            "conditions": [
+              {
+                "min": 10000.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "target": "$playerName",
+                "amount": "17",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "18",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "19",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "20",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "-17",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "-18",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "-19",
+                "type": "health",
+                "weight": 10
+              },
+              {
+                "target": "$playerName",
+                "amount": "-20",
+                "type": "health",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 60
           }
         ],
         "subMysteryGift": [
           {
+            "name": "Gift Sub Notify",
             "conditions": [],
             "outcomes": [
               {
-                "message": "Hey $streamer, $name just gave out $amount subs!",
-                "type": "chat"
+                "toastType": 2,
+                "title": "$name gifted",
+                "subtitle": "$amount subs!",
+                "type": "toast"
               }
             ],
             "playTime": 20
@@ -29,11 +344,42 @@
         ],
         "subscription": [
           {
+            "name": "Sub Notify",
             "conditions": [],
             "outcomes": [
               {
-                "message": "Hey $streamer, $user just subscribed for $amount months!",
-                "type": "chat"
+                "toastType": 2,
+                "title": "$name has subbed!",
+                "subtitle": "$months month(s)!",
+                "type": "toast"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 20
+          },
+          {
+            "name": "Celebrate good times ",
+            "conditions": [],
+            "outcomes": [
+              {
+                "command": "/execute at $playerName run summon firework_rocket ~3 ~ ~3 {LifeTime:20,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Flicker:1,Colors:[I;8073150],FadeColors:[I;8073150]}],Flight:1}}}}",
+                "type": "command"
+              },
+              {
+                "command": "/execute at $playerName run summon firework_rocket ~3 ~ ~-3 {LifeTime:20,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Flicker:1,Colors:[I;2437522],FadeColors:[I;2437522]}],Flight:1}}}}",
+                "type": "command"
+              },
+              {
+                "command": "/execute at $playerName run summon firework_rocket ~-3 ~ ~-3 {LifeTime:20,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Flicker:1,Colors:[I;11743532],FadeColors:[I;11743532]}],Flight:1}}}}",
+                "type": "command"
+              },
+              {
+                "command": "/execute at $playerName run summon firework_rocket ~-3 ~ ~3 {LifeTime:20,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Flicker:1,Colors:[I;14602026],FadeColors:[I;14602026]}],Flight:1}}}}",
+                "type": "command"
+              },
+              {
+                "command": "/execute at $playerName run summon firework_rocket ~ ~ ~ {LifeTime:40,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Trail:1,Colors:[I;11743532,2437522,8073150,14602026],FadeColors:[I;11743532,2437522,8073150,14602026]}],Flight:2}}}}",
+                "type": "command"
               }
             ],
             "playTime": 20
@@ -41,6 +387,7 @@
         ],
         "follow": [
           {
+            "name": "Follow Notify & Foods",
             "conditions": [
               {
                 "values": [
@@ -97,11 +444,13 @@
                 "type": "command"
               }
             ],
+            "allowsOtherEventsToTrigger": true,
             "playTime": 20
           }
         ],
         "host": [
           {
+            "name": "Host Notify",
             "conditions": [],
             "outcomes": [
               {
@@ -111,18 +460,75 @@
                 "type": "toast"
               }
             ],
+            "allowsOtherEventsToTrigger": true,
             "playTime": 20
+          },
+          {
+            "name": "Host Attack",
+            "conditions": [],
+            "outcomes": [
+              {
+                "command": "/execute at $playerName run summon minecraft:zombie_villager ~8 ~1 ~8 {CustomName:\"\\\"$name\\\"\",CustomNameVisible:1,PersistenceRequired:1b,Glowing:1,LeftHanded:0,Health:20,Attributes:[{Name:\"generic.maxHealth\",Base:20},{Name:\"generic.attackDamage\",Base:0}],IsBaby:0,ConversionTime:600,HandItems:[{id:\"minecraft:stick\",tag:{display:{Name:'{\"text\":\"Pointy Thing\"}'}},Count:1},{}]}",
+                "type": "command"
+              }
+            ]
           }
         ],
         "raid": [
           {
+            "name": "Raid Notify",
             "conditions": [],
             "outcomes": [
               {
-                "message": "Hey $streamer, $user just raided you with $amount raiders!",
-                "type": "chat"
+                "toastType": 2,
+                "title": "$name is raiding:",
+                "subtitle": "$amount viewers",
+                "type": "toast"
               }
-            ]
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "Blame The Cat",
+            "conditions": [
+              {
+                "value1": "0",
+                "value2": "10",
+                "variableName": "cats",
+                "roundNumber": true,
+                "type": "randomNumber"
+              },
+              {
+                "values": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9"
+                ],
+                "variableName": "cat",
+                "type": "randomString"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute at $playerName run summon minecraft:cat ~ ~ ~ {CatType:0, CustomName:\"\\\"Tan Cat 17\\\"\",CustomNameVisible:1,PersistenceRequired:1b}",
+                "type": "command"
+              },
+              {
+                "command": "/execute at $playerName run summon minecraft:cat ~ ~ ~ {CatType:10, CustomName:\"\\\"Black Cat 17\\\"\",CustomNameVisible:1,PersistenceRequired:1b}",
+                "type": "command"
+              },
+              {
+                "command": "/execute at $playerName run summon minecraft:cat ~ ~ ~ {CatType:$cat, CustomName:\"\\\"$name\\\"\",CustomNameVisible:1,PersistenceRequired:1b}",
+                "type": "command"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
           }
         ]
       },
@@ -136,13 +542,79 @@
       "types": {
         "donation": [
           {
+            "name": "Dono Notify",
             "conditions": [],
             "outcomes": [
               {
-                "message": "Hey $streamer, $user just tipped $formatted_amount!",
-                "type": "chat"
+                "toastType": 2,
+                "title": "$name Tipped!",
+                "subtitle": "I got you a dollar $amount",
+                "type": "toast"
               }
-            ]
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "conditions": [
+              {
+                "values": [
+                  "absorption",
+                  "unluck",
+                  "dolphins_grace",
+                  "fire_resistance",
+                  "glowing",
+                  "haste",
+                  "health_boost",
+                  "hero_of_the_village",
+                  "instant_health",
+                  "invisibility",
+                  "jump_boost",
+                  "luck",
+                  "regeneration",
+                  "resistance",
+                  "saturation",
+                  "slow_falling",
+                  "speed",
+                  "strength",
+                  "water_breathing"
+                ],
+                "variableName": "effect",
+                "type": "randomString"
+              },
+              {
+                "value1": "0",
+                "value2": "4",
+                "variableName": "amp",
+                "roundNumber": true,
+                "type": "randomNumber"
+              },
+              {
+                "variableName": "sudopotion",
+                "variableInput": "$amount",
+                "type": "variableInsert"
+              },
+              {
+                "calc": "x",
+                "value1": "sudopotion",
+                "value2": "5",
+                "variableName": "rawpotion",
+                "type": "math"
+              },
+              {
+                "calc": "floor",
+                "value1": "rawpotion",
+                "value2": "0",
+                "variableName": "potionout",
+                "type": "math"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/effect give Battery3996 $effect $potionout $amp true",
+                "type": "command"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
           }
         ]
       }
