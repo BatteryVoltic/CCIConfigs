@@ -8,10 +8,9 @@
             "conditions": [],
             "outcomes": [
               {
-                "toastType": 2,
-                "title": "$name cheered:",
-                "subtitle": "$amount",
-                "type": "toast"
+                "message": "$name cheered $amount bits!",
+                "inActionBar": true,
+                "type": "chat"
               }
             ],
             "triggersFromAnyConditionMet": true,
@@ -333,10 +332,9 @@
             "conditions": [],
             "outcomes": [
               {
-                "toastType": 2,
-                "title": "$name gifted",
-                "subtitle": "$amount subs!",
-                "type": "toast"
+                "message": "$name gifted $amount subs!",
+                "inActionBar": true,
+                "type": "chat"
               }
             ],
             "playTime": 20
@@ -348,10 +346,9 @@
             "conditions": [],
             "outcomes": [
               {
-                "toastType": 2,
-                "title": "$name has subbed!",
-                "subtitle": "$months month(s)!",
-                "type": "toast"
+                "message": "$name subscribed! $amount month(s)!",
+                "inActionBar": true,
+                "type": "chat"
               }
             ],
             "allowsOtherEventsToTrigger": true,
@@ -433,11 +430,9 @@
             ],
             "outcomes": [
               {
-                "toastType": 2,
-                "title": "New Follower!",
-                "subtitle": "$name",
-                "titleColor": "#D2B517",
-                "type": "toast"
+                "message": "New Follower!",
+                "inActionBar": true,
+                "type": "chat"
               },
               {
                 "command": "/give $playerName minecraft:$foods 1",
@@ -454,10 +449,9 @@
             "conditions": [],
             "outcomes": [
               {
-                "toastType": 2,
-                "title": "$name is Hosting!",
-                "subtitle": "$amount viewers joined!",
-                "type": "toast"
+                "message": "$name hosted you!",
+                "inActionBar": true,
+                "type": "chat"
               }
             ],
             "allowsOtherEventsToTrigger": true,
@@ -480,10 +474,9 @@
             "conditions": [],
             "outcomes": [
               {
-                "toastType": 2,
-                "title": "$name is raiding:",
-                "subtitle": "$amount viewers",
-                "type": "toast"
+                "message": "RAID! $name is raiding you with $amount viewers!",
+                "inActionBar": true,
+                "type": "chat"
               }
             ],
             "allowsOtherEventsToTrigger": true
@@ -530,10 +523,52 @@
             ],
             "allowsOtherEventsToTrigger": true
           }
+        ],
+        "resub": [
+          {
+            "name": "Sub Notify",
+            "conditions": [],
+            "outcomes": [
+              {
+                "message": "$name re-subscribed! $amount month(s)!",
+                "inActionBar": true,
+                "type": "chat"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 20
+          },
+          {
+            "name": "Celebrate good times ",
+            "conditions": [],
+            "outcomes": [
+              {
+                "command": "/execute at $playerName run summon firework_rocket ~3 ~ ~3 {LifeTime:20,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Flicker:1,Colors:[I;8073150],FadeColors:[I;8073150]}],Flight:1}}}}",
+                "type": "command"
+              },
+              {
+                "command": "/execute at $playerName run summon firework_rocket ~3 ~ ~-3 {LifeTime:20,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Flicker:1,Colors:[I;2437522],FadeColors:[I;2437522]}],Flight:1}}}}",
+                "type": "command"
+              },
+              {
+                "command": "/execute at $playerName run summon firework_rocket ~-3 ~ ~-3 {LifeTime:20,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Flicker:1,Colors:[I;11743532],FadeColors:[I;11743532]}],Flight:1}}}}",
+                "type": "command"
+              },
+              {
+                "command": "/execute at $playerName run summon firework_rocket ~-3 ~ ~3 {LifeTime:20,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Flicker:1,Colors:[I;14602026],FadeColors:[I;14602026]}],Flight:1}}}}",
+                "type": "command"
+              },
+              {
+                "command": "/execute at $playerName run summon firework_rocket ~ ~ ~ {LifeTime:40,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Trail:1,Colors:[I;11743532,2437522,8073150,14602026],FadeColors:[I;11743532,2437522,8073150,14602026]}],Flight:2}}}}",
+                "type": "command"
+              }
+            ],
+            "playTime": 20
+          }
         ]
       },
       "queue": [
-        "host+subscription+bits",
+        "host+subscription+bits+resub",
         "follow"
       ],
       "for": "twitch_account"
@@ -546,10 +581,9 @@
             "conditions": [],
             "outcomes": [
               {
-                "toastType": 2,
-                "title": "$name Tipped!",
-                "subtitle": "I got you a dollar $amount",
-                "type": "toast"
+                "message": "$name tipped you! Nice!",
+                "inActionBar": true,
+                "type": "chat"
               }
             ],
             "allowsOtherEventsToTrigger": true
@@ -610,7 +644,7 @@
             ],
             "outcomes": [
               {
-                "command": "/effect give Battery3996 $effect $potionout $amp true",
+                "command": "/effect give $playerName $effect $potionout $amp true",
                 "type": "command"
               }
             ],
