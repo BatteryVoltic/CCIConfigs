@@ -474,7 +474,7 @@
             "conditions": [],
             "outcomes": [
               {
-                "message": "RAID! $name is raiding you with $amount viewers!",
+                "message": "Warning! $name has an incoming raid, ",
                 "inActionBar": true,
                 "type": "chat"
               }
