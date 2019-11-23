@@ -9,11 +9,3 @@ You may use any of these configs, just give credit. You may modify them to your 
 ### MOD INFO
 Content Creator Integration: [CurseForge](https://www.curseforge.com/minecraft/mc-mods/content-creator-integration)  
 iChun: [CurseForge](https://www.curseforge.com/members/ohaiichun/projects) | [Twitch](https://www.twitch.tv/ohaiichun) | [Github](https://github.com/iChun)  
-
------
-### Streamers Associated With
-
-Battery3996 (self/script writer): [Twitch](https://www.twitch.tv/Battery3996)  
-Sublimiter (script writer): [Twitch](https://www.twitch.tv/sublimiter)  
-TarilltheMad: [Twitch](https://www.twitch.tv/TarilltheMad)  
-QuirkyGeek17: [Twitch](https://www.twitch.tv/quirkygeek17)  
