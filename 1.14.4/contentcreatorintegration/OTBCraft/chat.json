@@ -7,18 +7,43 @@
             "name": "Chat",
             "conditions": [
               {
-                "username": "InsertBotNameHere",
+                "variableName": "configId",
+                "variableResult": "1",
+                "type": "variable"
+              },
+              {
+                "username": "Robo_Bat",
                 "type": "user",
                 "inverseMatch": true
               }
             ],
             "outcomes": [
               {
-                "command": "/tellraw $playerName [\"\",{\"text\":\"<\"},{\"text\":\"[\",\"color\":\"gold\"},{\"text\":\"Twitch\",\"color\":\"dark_purple\"},{\"text\":\"]\",\"color\":\"gold\"},{\"text\":\" $display-name> $message\"}]",
+                "command": "/tellraw $playerName [\"\",{\"text\":\"<\"},{\"text\":\"[\",\"color\":\"gold\"},{\"text\":\"Battery\",\"color\":\"dark_purple\"},{\"text\":\"]\",\"color\":\"gold\"},{\"text\":\" $display-name> $message\"}]",
                 "type": "command"
               }
             ],
-            "triggersFromAnyConditionMet": true
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "conditions": [
+              {
+                "variableName": "configId",
+                "variableResult": "2",
+                "type": "variable"
+              },
+              {
+                "username": "Asylum_Orderly",
+                "type": "user",
+                "inverseMatch": true
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/tellraw $playerName [\"\",{\"text\":\"<\"},{\"text\":\"[\",\"color\":\"gold\"},{\"text\":\"Tarill\",\"color\":\"dark_purple\"},{\"text\":\"]\",\"color\":\"gold\"},{\"text\":\" $display-name> $message\"}]",
+                "type": "command"
+              }
+            ]
           }
         ],
         "action": [
